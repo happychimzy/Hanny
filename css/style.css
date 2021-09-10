@@ -190,163 +190,252 @@ header .banner{
 }
 
 .input-container .text-input,
-.input-container .form-btn{
+.input-container .form-btn {
     padding: 10px 10px;
     border: unset;
     border-radius: 15px;
 }
 
-.article-section{
-    flex-direction: row;
-    height: 300px;
-    display: flex;
-    flex-grow: 1;
-    overflow: hidden; 
-    margin: 0 auto;
-    justify-content: center;
-}
-.article-section .article-img{
-    height: 70vh;
-}
-.article-section .article-text{
-    padding: 30px;
-    font-size: 0.9rem;
-    width: 50%;
-}
-.namy{
-    font-style: italic;
-    margin-top: 15px;
+.input-container .form-btn {
+    background: #000;
+    color: #fff;
 }
 
-.gallery-2{
-    text-align: center;
+.article {
+    background-color: white;
+    padding: 3rem;
+}
+
+.article-img-container,.article-text-container {
+    height: 45rem;
+    display: flex;
+    align-items: center;
+}
+.article-img-container {
+    flex-shrink: 0;
+    flex-grow: 1;
+    flex-basis: 30%;
+}
+
+.article-img-container .article-img {
+    width: 100%;
+}
+.article-text-container {
+    flex-grow: 5;
+    flex-basis: 30%;
+    flex-shrink: 0;
+    padding: 1.3rem;
+}
+
+.article-text-container .article-text {
+    font-size: 1.1rem;
+    font-weight: 100;
+    line-height: 2rem;
+}
+.slide {
+    padding: 3.5rem;
     background-color: rosybrown;
     color: white;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
+}
+
+.slide .row-100{
+    justify-content: center;
+}
+
+.slide-heading {
+    font-size: 3.5rem;
+    font-style: italic;
+    margin-bottom: 0.5rem;
+}
+
+.slide-img-container {
+    height: 350px;
+    overflow: hidden;
+}
+
+.slide-img-container {
     flex-grow: 1;
+    height: 350px;
     overflow: hidden;
-    margin: 0 auto;
-    padding: 22px 0;   
-}
-
-.gallery-2 img{
-    width:24%;
-}
-
-.ogonna{
-    width: 80%;
-    margin: 30px auto;
-    justify-content: space-between;
-
-}
-
-.g-text{
-    font-weight: bolder;
-    font-style: italic;
-    font-size: 50px;
-}
-
-.second-image{
-    background-color: white;
-    display: flex;
-    flex-direction: row;
-    overflow: hidden;
-    padding: 22px 0;
-    margin: 0 auto;
-    align-items: center;
     background-repeat: no-repeat;
-}
-.ugochi{
-    width: 80%;
-    margin: 30px auto;
+    background-position: center;
+    background-size: cover;
     display: flex;
-    justify-content: space-between;
+    margin: 0.3rem;
 }
 
-.twin, .other, .last-images, .line{
-    width: 47%;
+.slide-img-1 {
+    background-image: url('../images/slide-1.jpg');
 }
-.twin img{
-    width: 47%;
-    height: 250px;
+.slide-img-2{
+    background-image: url('../images/slide-2.jpg');
 }
-
-.sub-container{
-    justify-content: space-between;
-    display: flex;
-    width: 90%;
-    margin: 10px auto;
-
+.slide-img-3{
+    background-image: url('../images/slide-3.jpg');
 }
-.line{
-    align-self: center;
+.slide-img-4{
+    background-image: url('../images/slide-4.jpg');
 }
 
-.last-images img{
-    width: 100%;
-    height: 500px;
-}
-
-.thick-line{
-    border: 6px solid #D9AEB3;
+.slide-img {
     width: 100%;
 }
 
-.puro{
-    text-align: center;
-    font-style: italic;
-    font-size: 3.2rem;
-    font-weight: 400;
-    font-family: Arial, Helvetica, sans-serif;
+.slide-img-container {
+    margin-top: 1.4rem;
+    font-size: 2rem;
 }
 
-.subscribe-form input[type="text"],
-.subscribe-form input[type="email"]{
-    height: 39px;
-    padding: 5px 10px;
-    width: 46%;
-}
-.subscribe-form input[type="text"]{
-    float: left;
+.product {
+    padding: 4.5rem;
 }
 
-.subscribe-form input[type="email"]{
-    float: right;
+.product-container {
+    height: 450px;
+    width: 100%;
+    /* flex-grow: 1; */
+    overflow: hidden;
+    /* align-items: center; */
+    display: flex;
+    flex-basis: 48%;
+    justify-content: space-between;
 }
 
-.input-form2{
-    margin-top: 20px;
-    text-align: center;
+.product-container .product-description {
+    padding: 1.0rem;
+}
+.product-container .image-box img {
+    height: 100%;
+    width: 100%;
 }
 
-.input-form2 button{
-    border-radius: 18px;
-    background-color: #000;
-    color: #fff;
-    font-size: 0.5rem;
-    text-align: center;
-    border: none;
-    padding: 8px 18px;
-    margin-bottom: 20px;
+.image-box {
+    height: 350px;
+    width: 48%;
+}
+.product-description {
+    height: 300px;
+    padding: 20px;
+    flex-grow: 1;
+    flex-basis: 50%;
 }
 
-.input-form2 .form-btn{
-    font-size: 15px;
+.product-description h4 {
+    font-size: 1.2rem;
+    font-weight: lighter;
+    text-align: left;
+    margin-bottom: 1.2rem;
 }
 
-.input-form2 .items-sub{
-    font-size: 1.0rem;
+.product-description .price-tag {
+    text-align: left;
+    font-weight: bold;
+    font-size: 1.5rem;
 }
 
-.social-icons{
-    background-color: #fff;
-    color: solid black;
-    margin-top: 30px;
+.product-description p {
+    font-size: 1.1rem;
+    margin-bottom: 1.2rem;
 }
 
-.social-icons .instagram{
-    padding: 0 27px;
+.product-description button {
+    width: 150px;
+    padding: 0.5rem;
+    border-radius: 1.1rem;
+    background-color: black;
+    color: white;
+    border: unset;
+    text-transform: uppercase;
     cursor: pointer;
 }
+
+.product-description button:hover {
+    background-color: rosybrown;
+}
+
+.subscribe {
+    /* display: flex; */
+    /* flex-direction: column; */
+
+}
+.subscribe-img-container,.subscribe-text-container {
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 50%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+
+}
+
+.subscribe-text {
+    justify-content: center;
+    height: 50px;
+    font-weight: lighter;
+    padding: 1rem;
+}
+
+.subscribe-img-container {
+    background-image: url(../images/subscribe.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: row;
+    height: 600px;
+}
+
+.subscribe-heading {
+    text-align: center;
+    font-size: 3.5rem;
+    font-style: italic;
+    font-weight: 400;
+}
+
+.subscribe-heading::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 75%;
+    height: 8%;
+    background-color: rosybrown;
+    align-items: center;
+}
+
+.button-container {
+    text-align: center;
+}
+
+.input-container {
+    display: flex;
+
+}
+
+.input-container input {
+    padding: 0.6rem 1rem;
+    margin: 1rem .5rem;
+    width: 48%;
+    justify-content: space-between;
+}
+
+.button-container button {
+    width: 6rem;
+    padding: 0.7rem;
+    background-color: #000;
+    color: white;
+    border: unset;
+    border-radius: 1.5rem;
+    text-align: center;
+
+}
+
+.social-icon {
+    margin: 2rem auto;
+    display: flex;
+}
+.social-icon .twitter {
+        padding: 0 25px;
+}        
